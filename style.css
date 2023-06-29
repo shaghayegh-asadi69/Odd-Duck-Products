@@ -78,10 +78,11 @@ main {
 }
 
 main img {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   margin-bottom: 3rem;
   max-height: 175px;
   transition: 0.3s;
+  border-radius: 20px;
 }
 
 main img:hover {
@@ -95,7 +96,7 @@ main img:hover {
 }
 
 section.no-voting img:hover {
-  opacity: 50%;
+  opacity: 40%;
   transition: none;
   transform: none;
   border: none;

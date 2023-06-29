@@ -202,3 +202,48 @@ function renderChart2() {
   const productChart2 = document.getElementById("chart2");
   const myChart = new Chart(productChart2, config);
 }
+
+
+
+ setLocalStorage();
+
+
+function setLocalStorage() {
+  localStorage.setItem("product", JSON.stringify(allProducts));
+}
+
+function checkLocalStorage() {
+  const localProducts = JSON.parse(localStorage.getItem("product"));
+  // console.log(localGoats);
+  if (localProducts) {
+    allProducts = localProducts;
+  } else {
+    console.log("new product please");
+    
+const bag = new Product("bag", "images/bag.jpg");
+const banana = new Product("banana", "images/banana.jpg");
+const bathroom = new Product("bathroom", "images/bathroom.jpg");
+const boots = new Product("boots", "images/boots.jpg");
+const breakfast = new Product("breakfast", "images/breakfast.jpg");
+const bubblegum = new Product("bubblegum", "images/bubblegum.jpg");
+const chair = new Product("chair", "images/chair.jpg");
+const cthulhu = new Product("cthulhu", "images/cthulhu.jpg");
+const dogDuck = new Product("dog-duck", "images/dog-duck.jpg");
+const dragon = new Product("dragon", "images/dragon.jpg");
+const pen = new Product("pen", "images/pen.jpg");
+const petSweep = new Product("pet-sweep", "images/pet-sweep.jpg");
+const scissors = new Product("scissors", "images/scissors.jpg");
+const shark = new Product("shark", "images/shark.jpg");
+const sweep = new Product("sweep","/images/sweep.png");
+const tauntaun = new Product("tauntaun", "images/tauntaun.jpg");
+const unicorn = new Product("unicorn", "images/unicorn.jpg");
+const waterCan = new Product("water-can", "images/water-can.jpg");
+const wineGlass = new Product("wine-glass", "images/wine-glass.jpg");
+}}
+
+checkLocalStorage();
+renderGoats();
+// create the setLocalStorage function and invoke at the bottom of renderChart()
+// create the checklocalStorage()
+// comment out the new instances and place in the else part of if statement
+// invoke the checkLocalStorage()

@@ -1,2 +1,1 @@
-# Odd-Duck-Products
-![Alt text](image-1.png)
+![screen shot of lighthouse result](./images/readme.png)
